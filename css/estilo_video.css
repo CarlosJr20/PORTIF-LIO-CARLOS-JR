@@ -1,0 +1,28 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+    
+  .box {
+    margin-top: 50px;
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    margin: auto;
+    z-index: -1;
+    width: 600px;
+    height: 355px;
+    background-color: #da4500;
+    transform: skew(15deg, 5deg);
+  }
+
+  
