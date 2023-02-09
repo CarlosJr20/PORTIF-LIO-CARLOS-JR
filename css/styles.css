@@ -61,6 +61,7 @@
   box-sizing: border-box;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -258,9 +259,12 @@ sup {
 a {
   color: #1f2b5e;
   text-decoration: underline;
+  transition:0.5s;
 }
 a:hover {
   color: #1f2b5e;
+  transition:0.5s;
+  transform:scale(1.2);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -513,6 +517,7 @@ progress {
   font-weight: 300;
 }
 
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -594,6 +599,16 @@ progress {
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
+}
+
+.list-inline-item{
+  transition:0.5s;
+  transform:scale(1);
+}
+.list-inline-item:hover{
+  transition:0.5s;
+  transform:scale(1.2);
+  color:#da4500;
 }
 
 .initialism {
@@ -7380,6 +7395,14 @@ textarea.form-control-lg {
 .mb-0 {
   margin-bottom: 0 !important;
   color: #da4500;
+  transition:0.5s;
+  
+}
+.mb-0 > li:hover{
+  color:#171a29;
+  transition:0.5s;
+  cursor:pointer;
+  transform:scale(1.01);
 }
 
 .mb-1 {
@@ -11341,6 +11364,10 @@ h1, .h1 {
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+.end_text{
+  padding: 0px 20px; 
 }
 
 .subheading {
